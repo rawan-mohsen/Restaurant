@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Prosto+One&display=swap");
+
+:root {
+    --main-background: #343a40;
+    --button-color: #ff2050;
+    --main-font: 'Prosto One', cursive;
+    --second-font: 'Roboto', sans-serif;
+    --third-font: 'Sofia Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* position: relative; */
+    background-color: var(--main-background);
+    color: var(--text-main);
+    font-family: var(--second-font);
+    height: 15000px;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.intro::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #1f262cd1;
+}
+
+
+.intro {
+    background-image: url(../images/main.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+}
+
+.introSec {
+    display: flex;
+    padding-top: 2%;
+    z-index: 1;
+    position: relative;
+    flex-direction: row;
+    padding-left: 5%;
+}
+
+.rightButton {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    padding-right: 5%;
+}
+
+.leftButton {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    padding-left: 30%;
+}
+
+.comp {
+    color: white;
+    border: 1px solid var(--button-color);
+    background-color: var(--button-color);
+    border-radius: 5px;
+    height: 30px;
+    text-transform: capitalize;
+}
+
+.home {
+    color: var(--button-color);
+    text-transform: capitalize;
+    padding-right: 10%;
+}
+
+.headIcons {
+    text-transform: capitalize;
+    padding-right: 10%;
+    color: white;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    align-items: center;
+}
+
+.foodHut {
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    align-items: center;
+}
+
+.foodHut {
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    padding-top: 15%;
+    padding-bottom: 2%;
+}
+
+.fresh {
+    color: white;
+    font-size: 3rem;
+    text-transform: capitalize;
+    padding-bottom: 2%;
+}
+
+button.view {
+    background-color: var(--button-color);
+    border: 5px solid var(--button-color);
+    color: white;
+    font-size: 1.2rem;
+    width: 15%;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.aboutUs {
+    padding-left: 10%;
+    width: 30%;
+    padding-top: 10%;
+}
+
+h3 {
+    color: white;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.aboutDesc {
+    color: white;
+}
+
+br {
+    padding: 2%;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+
+.photo {
+    display: flex;
+    
+}
