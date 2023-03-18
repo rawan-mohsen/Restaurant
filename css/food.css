@@ -10,25 +10,19 @@
 
 * {
     box-sizing: border-box;
+    color: white;
 }
+
 
 body {
     /* position: relative; */
     background-color: var(--main-background);
     color: var(--text-main);
     font-family: var(--second-font);
-    height: 15000px;
 }
 
-.container {
-    margin: auto;
-    display: flex;
-    flex-wrap: nowrap;
-}
 
-.clearfix {
-    clear: both;
-}
+/*! ************************* first section **************************/
 
 .intro::before {
     content: "";
@@ -45,10 +39,13 @@ body {
     background-position: center;
     height: 600px;
     position: relative;
+    width: 100%;
 }
+
 
 .introSec {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 2%;
     z-index: 1;
     position: relative;
@@ -58,25 +55,10 @@ body {
 
 .rightButton {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     width: 35%;
     padding-right: 5%;
-}
-
-.leftButton {
-    display: flex;
-    flex-direction: row;
-    width: 65%;
-    padding-left: 30%;
-}
-
-.comp {
-    color: white;
-    border: 1px solid var(--button-color);
-    background-color: var(--button-color);
-    border-radius: 5px;
-    height: 30px;
-    text-transform: capitalize;
 }
 
 .home {
@@ -88,33 +70,34 @@ body {
 .headIcons {
     text-transform: capitalize;
     padding-right: 10%;
-    color: white;
+}
+
+.leftButton {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 65%;
+    padding-left: 30%;
+}
+
+.comp {
+    border: 1px solid var(--button-color);
+    background-color: var(--button-color);
+    border-radius: 5px;
+    height: 30px;
+    text-transform: capitalize;
 }
 
 .food {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
     align-items: center;
 }
 
 .foodHut {
-    color: white;
-    font-size: 3rem;
-    font-weight: bolder;
-}
-
-.food {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    align-items: center;
-}
-
-.foodHut {
-    color: white;
     font-size: 3rem;
     font-weight: bolder;
     text-transform: capitalize;
@@ -123,36 +106,42 @@ body {
 }
 
 .fresh {
-    color: white;
     font-size: 3rem;
     text-transform: capitalize;
     padding-bottom: 2%;
 }
 
-button.view {
+button.redButton {
     background-color: var(--button-color);
-    border: 5px solid var(--button-color);
-    color: white;
-    font-size: 1.2rem;
-    width: 15%;
+    border: 2px solid var(--button-color);
+    width: 12%;
     border-radius: 5px;
     text-transform: capitalize;
 }
 
+/*! ************************* second section **************************/
+.container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+img.bout {
+    width: 50%;
+    height: 10%;
+}
+
 .aboutUs {
     padding-left: 10%;
-    width: 30%;
+    width: 50%;
     padding-top: 10%;
 }
 
 h3 {
-    color: white;
     font-size: 2rem;
     text-transform: capitalize;
-}
-
-.aboutDesc {
-    color: white;
 }
 
 br {
@@ -163,8 +152,245 @@ br {
     font-weight: bold;
 }
 
+/*! ************************* third section **************************/
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3rem;
+    padding: 5%;
+    font-weight: 100;
+    margin: 0;
+    z-index: 1;
+}
 
 .photo {
     display: flex;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+img.grid {
+    width: 25%;
+}
+
+/*! ************************* fourth section **************************/
+.table::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #343a40b5;
+}
+
+.table {
+    background-image: url(../images/book-table-img.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.insert {
+    width: 100%;
+    padding-left: 4%;
+    z-index: 1;
+}
+
+input {
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid white;
+    width: 24%;
+    height: 30px;
+    padding-left: 1%;
+}
+
+button.find {
+    border: 10px solid var(--button-color);
+    background-color: var(--button-color);
+    text-transform: uppercase;
+    width: 10%;
+    height: 7%;
+    z-index: 1;
+}
+
+/*! ************************* fifth section **************************/
+
+.option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.juice {
+    text-transform: capitalize;
+    padding-left: 5%;
+    color: var(--button-color);
+}
+
+.varieties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 7%;
+}
+
+.card {
+    background-color: transparent;
+    border: 2px solid #ffffff21;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.price {
+    background-color: var(--button-color);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    width: 15%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    padding-top: 5%;
+}
+
+.description {
+    font-size: .9rem;
+    padding-top: 5%;
+    text-align: center;
+}
+
+/*! ************************* sixth section **************************/
+
+.pov {
+    padding-bottom: 5%;
+}
+
+.reviewCont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.people {
+    padding: 2%;
+}
+
+.person {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    padding-bottom: 2%;
+}
+
+.position {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: .8rem;
+    padding-bottom: 10%;
+}
+
+.box {
+    border: 2px solid;
+    border-color: #ff1e51 #ffffff4f #ffffff4f;
+    padding: 20px;
+    text-align: center;
+    font-size: .9rem;
+    font-family: arial;
+    position: relative;
+}
+
+.box:after {
+    content: "";
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 9px solid #ff1e51;
+    right: 50%;
+    top: -19px;
+}
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: .25;
+    margin: 0;
+}
+
+.find {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.address {
+    padding-left: 4%;
+    width: 57%;
+}
+
+.cnct {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    padding-bottom: 2%;
+}
+
+.location {
+    width: 70%;
+    padding-bottom: 2%;
+}
+
+.contact {
+    color: #8e969d;
+}
+
+.fa-solid {
+    padding-right: 2%;
+}
+
+/*! ************************* seventh section **************************/
+.connection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 10% 0;
+}
+
+.call {
+    width: 25%;
+}
+
+.copy {
+    color: #8e969d;
+    font-size: .8rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 1%;
+}
+
+span {
+    color: var(--button-color);
 }
