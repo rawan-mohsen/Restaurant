@@ -49,16 +49,13 @@ body {
     padding-top: 2%;
     z-index: 1;
     position: relative;
-    flex-direction: row;
     padding-left: 5%;
+    justify-content: space-between;
 }
 
 .rightButton {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 35%;
-    padding-right: 5%;
+    flex-basis: 35%;
 }
 
 .home {
@@ -74,10 +71,9 @@ body {
 
 .leftButton {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 65%;
-    padding-left: 30%;
+    height: 30px;
+    line-height: 30px;
+    flex-basis: 35%;
 }
 
 .comp {
@@ -85,6 +81,8 @@ body {
     background-color: var(--button-color);
     border-radius: 5px;
     height: 30px;
+    width: 105px;
+    text-align: center;
     text-transform: capitalize;
 }
 
@@ -167,7 +165,6 @@ h2 {
 
 .photo {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -286,7 +283,6 @@ button.find {
 
 .reviewCont {
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-evenly;
@@ -395,4 +391,18 @@ hr {
 span,
 .fa-heart {
     color: var(--button-color);
+}
+
+
+
+/********************************************** */
+@media (max-width:850px) {
+
+    .introSec,
+    .rightButton,
+    .leftButton {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
