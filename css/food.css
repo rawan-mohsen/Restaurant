@@ -383,14 +383,16 @@ hr {
     width: 25%;
 }
 
-.copy {
+.copy,
+.fa-copyright {
     color: #8e969d;
     font-size: .8rem;
     text-transform: capitalize;
     text-align: center;
-    padding: 1%;
+    padding: 1% 0;
 }
 
-span {
+span,
+.fa-heart {
     color: var(--button-color);
 }
