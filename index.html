@@ -18,6 +18,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--? ------------------------ My styles  ------------------------------->
+    <link rel="image_src" href="./images/about-section.jpg" />
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/food.css">
@@ -29,19 +30,19 @@
 
 <body>
 
-    <div class="intro">
+    <div id="intro">
         <nav class="introSec">
             <div class="rightButton">
                 <div class="home">home</div>
-                <div class="headIcons about"><a href="#aboutSection"></a> about</div>
+                <div class="headIcons about"><a href="#aboutUs"> about</a></div>
                 <div class="headIcons gallary"><a href="#gallery">gallery</a>
                 </div>
-                <div class="headIcons book">book-table</div>
+                <div class="headIcons book"><a href="#table">book-table</a></div>
             </div>
             <div class="leftButton">
-                <div class="headIcons">blog</div>
-                <div class="headIcons">reviews</div>
-                <div class="headIcons">contact us</div>
+                <div class="headIcons"><a href="#events">blog</a></div>
+                <div class="headIcons"><a href="#pov">reviews</a></div>
+                <div class="headIcons"><a href="#findUs">contact us</a></div>
                 <div class="comp">components</div>
             </div>
         </nav>
@@ -52,10 +53,10 @@
         </div>
     </div>
 
-    <section class="second" id="aboutSection">
+    <section id="aboutSection">
         <div class="container">
             <img src="./images/about-section.jpg" alt="about" class="bout">
-            <div class="aboutUs">
+            <div id="aboutUs">
                 <h3>about us</h3>
                 <div class="aboutDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Consectetur, quisquam accusantium nostrum modi, nero, officia veritatis ipsum facere maxime
@@ -106,7 +107,7 @@
         </div>
     </div>
 
-    <div class="table">
+    <div id="table">
         <h2>book a table</h2>
         <div class="insert">
             <input type="email" placeholder="email">
@@ -117,10 +118,11 @@
         <button class="find">find table</button>
     </div>
 
-    <div class="events">
+    <div id="events">
         <h2>events at the food hut</h2>
         <div class="option">
             <button class="redButton">foods</button>
+            <!-- <div class="juice">juices</div> -->
             <div class="juice">juices</div>
         </div>
         <div class="varieties">
@@ -146,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" >
+            <div class="card">
                 <img src="./images/blog-3.jpg" class="card-img-top" alt="blogThree">
                 <div class="card-body">
                     <div class="card-text">
@@ -160,7 +162,7 @@
         </div>
     </div>
 
-    <div class="pov">
+    <div id="pov">
         <h2 class="reviews">reviews</h2>
         <div class="reviewCont">
             <div class="people">
@@ -190,11 +192,10 @@
         </div>
     </div>
     <hr>
-    <div class="find">
+    <div id="findUs">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.380621985814!2d31.398077475438203!3d30.111920274889737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145817082ea84f41%3A0xe065af2151e21386!2sCairo%20International%20Airport!5e0!3m2!1sen!2seg!4v1679086719755!5m2!1sen!2seg"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="address">
             <div class="cnct">find us</div>
             <div class="location">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -224,7 +225,9 @@
         </div>
     </div>
     <hr>
-
+    <div class="backtotop backtotopFixed">
+        <a href="#intro"><i class="fa-solid fa-circle-up"></i></a>
+    </div>
     <div class="copy"><i class="fa-regular fa-copyright"></i> copyright 2022 made with <span><i
                 class="fa-regular fa-heart"></i></span> by <span>devCRUD</span></div>
 </body>
