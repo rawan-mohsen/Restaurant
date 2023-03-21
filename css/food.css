@@ -245,18 +245,18 @@ button.find {
     border: 3px solid var(--button-color);
     background-color: transparent;
     padding-right: 5%;
-    opacity:1;
+    opacity: 1;
     height: auto;
-    transition:.5s ease-in-out;
+    transition: .5s ease-in-out;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    -webkit-transition:.5s ease-in-out;
-    -moz-transition:.5s ease-in-out;
-    -ms-transition:.5s ease-in-out;
-    -o-transition:.5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
 }
 
 .varieties {
@@ -474,13 +474,14 @@ span,
 @media (max-width:850px) {
 
 
+    div#intro {
+        height: 350px;
+        width: 100%;
+    }
+
     .rightButton,
     .leftButton {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        font-size: .9rem;
-        padding-bottom: 15%;
+        display: none;
     }
 
     .foodHut {
@@ -503,14 +504,19 @@ span,
         -o-border-radius: 20px;
     }
 
+    .container {
+        flex-wrap: nowrap;
+    }
 
     img.bout {
-        width: 70%;
+        width: 50%;
         height: 5%;
     }
 
     div#aboutUs {
-        width: 70%;
+        padding-left: 10%;
+        padding-top: 5%;
+        height: 200px;
     }
 
     h3 {
@@ -522,6 +528,8 @@ span,
         padding-left: 0;
         width: 100%;
         padding-bottom: 10%;
+        height: 200px;
+        overflow-x: scroll;
     }
 
 
