@@ -497,10 +497,11 @@ span,
     button.redButton {
         background-color: var(--button-color);
         border: 1px solid var(--button-color);
-        width: 15%;
+        width: 18%;
         border-radius: 5px;
         text-transform: capitalize;
         margin-right: 2%;
+        font-size: 0.8rem;
     }
 
     .container {
@@ -508,8 +509,7 @@ span,
     }
 
     img.bout {
-        width: 50%;
-        height: 5%;
+        width: 35%;
     }
 
     div#aboutUs {
@@ -537,8 +537,16 @@ span,
         letter-spacing: 1px;
     }
 
+    .photo {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10%;
+        justify-content: center;
+    }
+
     img.grid {
-        width: 50%;
+        width: 30%;
+        padding: 2%;
     }
 
     .insert {
@@ -578,7 +586,7 @@ span,
     }
 
     .card {
-        width: 50%;
+        width: 35%;
     }
 
     .title {
